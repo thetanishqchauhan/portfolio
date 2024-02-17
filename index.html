@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/homestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://css.gg/css?=|website" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ded1a9b290.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script defer src="/assets/script.js"></script>
+    <title>Tanishq Chauhan</title>
+</head>
+<body>
+    <div class="home-banner">
+
+        <!-- Topnav -->
+        <div class="topnav">
+            <div class="nav-buttons">
+                <div onclick = showsidenav() class="menu hideOnScreen"><i class="fa-solid fa-bars fa-lg"></i></div>
+                <a class="btn hideOnMobile" href="#banner-title">HOME</a>
+                <a class="btn hideOnMobile" href="#about">ABOUT</a>
+                <a class="btn hideOnMobile" href="#education">EDUCATION</a>
+                <a class="btn hideOnMobile" href="#projects">PORTFOLIO</a>
+                <a class="btn hideOnMobile" href="#contact">CONTACT</a>
+            </div>
+        </div>
+        <!-- Sidenav -->
+        <div class="sidenav">
+            <div onclick = hidesidenav() class="close-menu"><i class="fa-solid fa-xmark fa-lg"></i></div>
+            <a href="#banner-title">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#education">EDUCATION</a>
+            <a href="#projects">PORTFOLIO</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+
+        <!-- Banner -->
+        <div id="banner-title">
+            <h5><span class="auto-type-2"></span> MY NAME IS</h5>
+            <h1>Tanishq<br>Chauhan</h1>
+            <h5>WEBSITE DEVELOPER</h5>
+            <div class="profile">
+                <img src="/assets/img/profile-pic1-pspd.png" alt="avatar" width="200vw" draggable="false">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- About -->
+    <hr id="ruler">
+    <div data-aos="fade-up" id="about">
+        <h1>Hi! My name is <span>Tanishq.</span> I'm a <br><span class="auto-type-text"></span></h1>
+        <p>"I am a Full-stack as well as WordPress web developer with an experience of more than a Year in <a href="https://dotwebinnovation.com/" target="_blank">DOTWEB innovations</a>. My dedication to delivering high-quality work has consistently earned me recognition from both clients and colleagues.
+        Passionate about personal growth and professional development, I am constantly seeking opportunities to expand my knowledge and skill set."</p>
+        <a class="resume" href="/assets/Resume-Tanishq-Chauhan.pdf" target="_blank"><button onclick="downloadDocument()">My Resume  <i class="fa-solid fa-arrow-right"></i></button></a>
+    </div>
+
+    <!-- Education -->
+    <section data-aos="fade-up" id="education">
+        <div data-aos="fade-right" class="education-details">
+          <h2>Education</h2>
+
+          <section>
+            <h3>MIET college, Meerut U.P.</h3>
+            <p>Bachelor in Computer Science & Engineering with specialization in AI.</p>
+            <p>Technical programs covering HTML, CSS  and JavaScript.</p>
+            <br>
+          </section>
+
+          <section>
+            <h3>The Kuber Public School, Modipuram Meerut.</h3>
+            <p>Class 12<sup>th</sup> from CBSE Board. </p>
+            <p></p> <br>
+          </section>
+
+          <section>
+            <h3>Vidya Acadamy, Daurala Meerut</h3>
+            <p>Class 10<sup>th</sup> from CBSE Board. </p>
+          </section>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <div data-aos="fade-up" id="projects">
+        <h2>Portfolio</h2>
+        <div class="project-row">
+            <div data-aos="fade-up" class="project-column">
+                <a href="https://github.com/thetanishqchauhan/TanishqChauhanPortfolio.git" target="_blank"><img src="/assets/img/my-portfolio-website.png" alt="My portfolio website" width="100%" height="auto"></a>
+                <h3>Personal Portfolio Website</h3>
+            </div>
+            <div data-aos="fade-up" class="project-column">
+                <a href="https://trendtheory.in/" target="_blank"><img src="/assets/img/trend-theory-website.png" alt="Trend Theory website" width="100%" height="auto"></a>
+                <h3>E-Commerce Website</h3>
+            </div>
+        </div>
+        <div class="project-row">
+            <div data-aos="fade-up" class="project-column">
+                <a href="https://www.scenicservices.us/" target="_blank"><img src="/assets/img/scenic-services-website.png" alt="Scenic Services website" width="100%" height="auto"></a>
+                <h3>Tours & Travels Website</h3>
+            </div>
+            <div data-aos="fade-up" class="project-column">
+                <a href="https://www.radiantmetals.com/index.html" target="_blank"><img src="/assets/img/radiant-website.png" alt="Radiant & Alloys website" width="100%" height="auto"></a>
+                <h3>Business Website</h3>
+            </div>
+        </div>
+        <div class="project-row">
+            <div data-aos="fade-up" class="project-column">
+                <a href="https://github.com/thetanishqchauhan/personal-project-shivangi-learning-point" target="_blank"><img src="/assets/img/SLP-website.png" alt="Shivangi Learning Point" width="100%" height="auto"></a>
+                <h3>Educational Website</h3>
+            </div>
+            <div data-aos="fade-up" class="project-column">
+                <a href="https://github.com/thetanishqchauhan/Goodie-foodie" target="_blank"><img src="/assets/img/goodie-foodie-website.png" alt="Goodie Foodie Website" width="100%" height="auto"></a>
+                <h3>College Project</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <footer>
+        <div id="contact">
+          <h2>Let's Keep in Touch!</h2>
+            <ul class="contact-list">
+                <li><a href="mailto:contact.tanishqchauhan@gmail.com"><i class="fa-solid fa-envelope"></i> HotMail</a></li>
+                <li><a href="https://github.com/thetanishqchauhan" target="_blank"><i class="fa-brands fa-github"></i> Github</a></li>
+                <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/thetanishqchauhan/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://wa.me/9058212460" target="_blank"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script>
+
+        function showsidenav(){
+            const sidenav = document.querySelector('.sidenav')
+            sidenav.style.display = 'flex'
+        }
+        function hidesidenav(){
+            const sidenav = document.querySelector('.sidenav')
+            sidenav.style.display = 'none'
+        }
+        
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+
+        var typed = new Typed(".auto-type-text", {
+            strings: ["Full-stack Developer.", "WordPress Developer.", "Python Programmer."],
+            typeSpeed: 80,
+            backSpeed: 50,
+            backDelay: 800,
+            loop: true
+        })
+        var typed = new Typed(".auto-type-2", {
+            strings: ["Hello!"],
+            typeSpeed: 90,
+            backSpeed: 70,
+            showCursor: false,
+            loop: false
+        })
+
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 250,
+            duration: 650,
+        });
+    </script>
+
+</body>
+</html>
