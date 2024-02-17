@@ -1,0 +1,577 @@
+*{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 15rem;
+}
+
+::selection{user-select: none;}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-banner{
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+
+/* Top navbar */
+.topnav{
+    background-color: rgba(32, 33, 36, 0.1);
+    padding: 25px;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(20px);
+}
+
+.nav-buttons{
+    text-align: center;
+    position: relative;
+}
+
+.nav-button-active{
+    background-color: rgba(255, 193, 5, 0.925);
+    color: #000;
+    border-radius: 5px;
+}
+
+.nav-buttons a:hover{
+    background-color: rgba(255, 193, 5, 0.925);
+    color: #000;
+    box-shadow: 0 0 26px 1px rgba(255, 193, 5, 0.925);
+    border-radius: 5px;
+}
+
+.nav-buttons a{
+    text-align: center;
+    padding: 16px;
+    font-family: sans-serif;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    font-size: 12px;
+    font-weight: 550;
+    transition: 00ms ease-in-out;
+}
+
+.menu{
+    float: left;
+    margin: 0px;
+}
+
+/* Side Navbar */
+.sidenav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(32, 33, 36, 0.199);
+    box-shadow: 0 0 26px 1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    padding-top: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidenav a{
+    padding: 16px;
+    font-family: sans-serif;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    font-size: 12px;
+    font-weight: 550;
+    transition: 00ms ease-in-out;
+    width: 190px;
+}
+
+.close-menu{
+    width: 190px;
+    padding: 16px;
+}
+
+.sidenav-button-active{
+    background-color: rgba(255, 193, 5, 0.925);
+    color: #000;
+    border-radius: 5px;
+}
+
+.sidenav a:hover{
+    background-color: rgba(255, 193, 5, 0.925);
+    color: #000;
+    box-shadow: 0 0 26px 1px rgba(255, 193, 5, 0.925);
+    border-radius: 5px;
+}
+
+
+/* Title section */
+#banner-title{
+    padding: 20vh 0 6vh 0;
+    text-align: center;
+}
+
+#banner-title h5{
+    padding: 32px 0;
+    font-size: 14px;
+    letter-spacing: 1.6px;
+    word-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#banner-title h1{
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 100px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.profile{
+    padding-top: 22px;
+}
+
+
+/* ruler */
+
+#ruler{
+    width: 50%;
+    margin: auto;
+    color: rgb(255, 192, 5);
+}
+
+/*
+.circle-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+.circle {
+    width: 6px;
+    height: 6px;
+    background-color: #3498db;
+    border-radius: 50%;
+}
+
+.line-between-circles::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.shapes-horizontal{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    vertical-align: middle;
+    
+}
+
+.circle-horizontal{
+    width: 5px;
+    height: 5px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    background-color: black;
+}
+
+.circle-horizontal::after, .circle-horizontal::before{
+    content: '';
+    position: absolute;
+    margin: auto;
+    width: 45%;
+    top: 45%;
+}
+
+.circle-horizontal::before{
+    right: 0
+}
+
+.circle-horizontal::after{
+    left: 0
+}
+
+.line-horizontal{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 0 auto;
+} */
+
+
+/* About */
+#about{
+    margin: 3% 25% 6% 25%;
+    text-align: center;
+}
+
+/*
+#about span{
+    color: rgb(255, 192, 5);
+} */
+
+#about h1{
+    padding: 1% 12%;
+    font-weight: 600;
+    line-height: 1.3;
+    font-size: 4.5vh;
+}
+
+#about p a{
+    text-decoration: none;
+    color: rgb(255, 192, 5);
+}
+
+#about p{
+    padding: 2% 5%;
+    line-height: 1.6;
+    font-size: 2vh;
+    font-weight: 300;
+}
+
+.resume button{
+    text-align: center;
+    margin: 5% 0;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: #fff;
+    color: rgb(255, 192, 5);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.7px;
+    font-size: 13px;
+    font-weight: 550;
+    border: none;
+    box-shadow: 0 0 18px -1px rgba(255, 193, 5, 0.925);
+    transition: 300ms ease-in-out;
+}
+
+.resume button:hover{
+    background-color: rgb(255, 193, 5);
+    color: #000;
+    box-shadow: 0 0 26px 1px rgb(255, 193, 5);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.auto-type-text{
+    color: rgb(255, 192, 5);
+}
+
+
+/* Education */
+#education{
+    background-image: url(work-bg.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding: 100px 0;
+}
+
+#education p{
+    width: 60%;
+    font-weight: 300;
+}
+
+.education-details{
+    padding: 3% 25% 3% 15%;
+}
+
+.education-details h2{
+    font-family: 'Protest Revolution', sans-serif;
+    padding: 0 50% 5% 0;
+    font-size: 32px;
+    letter-spacing: 1.8px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 1.3rem;
+}
+
+.education-details h2::after, .education-details h2::before{
+    content: "";
+    height: 2px;
+    background-color: #000;
+    display: block;
+}
+
+.education-details h3{
+    font-weight: 600;
+}
+
+
+/* Services
+#services{
+    margin: 4% 20% 15% 20%;
+    text-align: center;
+}
+
+#services h2{
+    padding: 1% 12%;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 1.3px;
+    font-size: 3vh;
+}
+
+#services h3{
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#services p{
+    line-height: 1.6;
+    font-size: 2vh;
+    font-weight: 300;
+    padding: 5px 0;
+}
+
+.services-website{
+    width: 33.33%;
+    float: left;
+}
+
+.services-wordpress{
+    width: 33.33%;
+    float: left;
+}
+
+.services-design{
+    width: 33.33%;
+    float: left;
+}
+*/
+
+
+/* Portfolio */
+#projects{
+    width: 100%;
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 6%;
+    text-align: center;
+}
+
+#projects h2{
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 32px;
+    letter-spacing: 1.8px;
+    padding: 4% 22%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 1.2rem;
+}
+
+#projects h2::after, #projects h2::before{
+    content: "";
+    height: 2px;
+    background-color: #000;
+    display: block;
+}
+
+.project-row{
+    padding: 0 7vw;
+}
+
+.project-row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.project-column{
+    max-width: 45%;
+    padding: 30px 26px 20px 26px;
+    float: left;
+}
+
+.project-column img{
+    box-shadow: 0 0 8px -2px rgb(53, 51, 45);
+}
+
+.project-column img:hover{
+    box-shadow: 0 0 13px 0.6px rgb(255, 193, 5);
+}
+
+.project-column h3{
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+
+
+/* Contact */
+#contact{
+    margin-top: 10%;
+    max-width: 100%;
+    text-align: center;
+    background-color: rgba(32, 33, 36, 0.849);
+}
+
+#contact h2{
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Protest Revolution', sans-serif;
+    font-size: 32px;
+    padding: 4% 14%;
+    letter-spacing: 1.8px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 1.2rem;
+    font-weight: 500;
+}
+
+#contact h2::after, #contact h2::before{
+    content: "";
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: block;
+}
+
+.contact-list {
+    list-style-type: none;
+    padding-bottom: 60px;
+}
+
+.contact-list a {
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255, 193, 5);
+}
+
+.contact-list li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+
+/* Media queries */
+
+@media(max-width:700px){
+    .hideOnMobile{
+        display: none;
+    }
+}
+
+@media(min-width:700px){
+    .hideOnScreen{
+        display: none;
+    }
+}
+
+@media(max-width: 860px){
+    #about{
+        margin: 2%;
+        padding-bottom: 6%;
+    }
+    #about h1{
+        font-size: 3.5vh;
+    }
+    #about p{
+        font-size: 2vh;
+    }
+    #banner-title h1{
+        font-size: 80px;
+    }
+    .resume button{
+        padding: 16px;
+        font-size: 12px;
+    }
+    #education{
+        background-position: center;
+    }
+    .education-details {
+        padding: 3% 5% 3% 5%;
+    }
+    .education-details p{
+        width: 100%;
+    }
+    .project-row{
+        padding: 0;
+    }
+    .project-column{
+        max-width: 43%;
+        padding: 10px 10px 10px 10px;
+        float: left;
+    }
+}
+
+@media(max-width: 1220px){
+    .project-column{
+        max-width: 45%;
+        padding: 20px 20px 20px 20px;
+        float: left;
+    }
+}
+
+@media(max-width: 800px){
+    .project-column{
+        max-width: 100%;
+        padding: 4% 4%;
+        float: left;
+    }
+    .project-column h3 {
+        font-weight: 600;
+        font-size: 15px;
+        letter-spacing: 0.8px;
+        padding: 10px 0 10px 0;
+    }
+    #contact h2{
+        color: rgba(255, 255, 255, 0.9);
+        font-family: 'Protest Revolution', sans-serif;
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 500;
+    }
+    .contact-list{
+        padding: 0 10% 0 38%;
+    }
+    .contact-list a {
+        text-decoration: none;
+        text-align: center;
+        color: rgb(255, 193, 5);
+    }
+    .contact-list li{
+        width: 100%;
+        display: flex;
+        padding: 10px 0;
+    }
+}
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#ffc105d8, #ff7605d8);
+    border-radius: 12px;
+}
